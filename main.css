@@ -1,0 +1,154 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html{
+    font-family: "open sans";
+}
+img{
+    width: 100%;
+    height: 100%;
+    margin-top:20px;
+}
+.nav{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    background-color: #fff;
+}
+#git{
+    color:#1C3DA3;
+}
+.menu{
+    margin: 0 50px 0 0;
+}
+.menu a{
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+    clear: right;
+    font-size: 19px;
+}
+.menu a:focus{
+    text-decoration: rebeccapurple;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+label img{
+    vertical-align: middle;
+}
+#toggle{
+    display: none;
+}
+
+/* INTRO SECTION */
+.intro{
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+    /* margin-top: 70px; */
+}
+.intro h1{
+    font-size: 47px;
+    line-height: 60px;
+}
+.intro p{
+    font-size: 22px;
+    line-height: 39px;
+}
+.intro ul li p{
+    margin: 0px;
+}
+
+/* WORK SECTION */
+.work{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    /* margin-top: 40px; */
+}
+.work .project{
+    display: flex;
+    min-height: 400px;
+}
+.project div{
+    width: 50%;
+}
+.project div:nth-child(1){
+    grow: 1;
+}
+.project div:nth-child(1){
+    grow: 1;
+}
+
+.project div a{
+    text-decoration: none;
+    color: gray;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+    margin-right:20px;
+}
+.work h1{
+    font-size: 47px;
+    line-height: 60px;
+}
+.work p{
+    font-size: 22px;
+    line-height: 39px;
+}
+.work h1{
+    text-align: center;
+}
+
+footer{
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+    padding: 70px 0;
+    font-weight: 400;
+}
+@media only screen and (max-width: 640px){
+    .nav{
+        border: none;
+    }
+     label{
+        display: block;
+        cursor: pointer;
+    }
+    #toggle:checked + .menu{
+        display: block;
+    } 
+    .intro h1{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .intro p{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .work{
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 0;
+        margin-top: 0px;
+    }
+    .work h1{
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .work .project{
+        display: block;
+        
+    }
+    .project div{
+        width: 100%;
+    }
+}
